@@ -200,12 +200,17 @@ p {
 
 .web h3 {
   font-size: 16px;
-  padding-top: 2rem;
+
   color: black;
 }
 .web p {
   font-size: 13px;
-  padding-top: 10px;
+  padding-top: 3px;
+}
+.web img {
+  width: 40px;
+  height: 40px;
+  padding-top: 2px;
 }
 /* contact */
 .contact {
