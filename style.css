@@ -193,24 +193,25 @@ p {
   width: 250px;
   height: 200px;
   border-radius: 5px;
-  margin-right: 10px;
+  margin-left: 10px;
 
   background-color: rgb(207, 202, 202);
 }
 
 .web h3 {
-  font-size: 16px;
+  font-size: 15px;
 
   color: black;
 }
 .web p {
   font-size: 13px;
-  padding-top: 3px;
 }
 .web img {
   width: 40px;
   height: 40px;
-  padding-top: 2px;
+}
+.desk {
+  padding-top: 10px;
 }
 /* contact */
 .contact {
@@ -331,6 +332,13 @@ footer {
   .web {
     margin-top: 10px;
     margin-bottom: 3px;
+    width: 60vw;
+  }
+  .web h3 {
+    font-size: 15px;
+  }
+  .web p {
+    font-size: 13px;
   }
   .text-content p {
     font-size: 12px;
@@ -343,6 +351,6 @@ footer {
     height: 40px;
   }
   footer {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
