@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webstack</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Andy Chibueze</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu" onclick="menu()">
+        <img src="./assessts/menu.png" alt="" />
+      </div>
+      <div class="stat" onclick="andy()">
+        <img src="./assessts/image.png" alt="" class="got" />
+      </div>
+    </nav>
+    <main>
+      <section id="home" class="hero">
+        <div class="hello">
+          <h1>Hello!</h1>
+          <h2>Hi i'm Andy Chibueze</h2>
+          <p>A passionate web designer & developer</p>
+          <div class="btn">
+            <a href="#services"> <button>View more details</button></a>
+          </div>
+        </div>
+        <div class="img">
+          <img src="./assessts/IMG-20250111-WA0020.jpg" alt="" />
+        </div>
+      </section>
+      <section id="about" class="drop">
+        <div class="imc">
+          <img src="./assessts/IMG-20250111-WA0020.jpg" alt="" />
+        </div>
+        <div class="start">
+          <h2>About Me</h2>
+          <p>
+            I speciliaze in modern web design,and responsive layout.
+            <br />Ensuring that every website i create is both visually
+            appealing <br />and functional. whether you are start up, small
+            <br />
+            business or established brand. i'm here to help you.
+          </p>
+          <div class="cta-button">
+            <a href="#contact"><button>Contact Me</button></a>
+          </div>
+        </div>
+      </section>
+      <section id="project" class="portfolio">
+        <h2>My Projects</h2>
+        <p>Engaging digital experiences</p>
+        <div class="state">
+          <a href="https://andypraise.github.io/ntf-card/"
+            ><img src="./assessts/nft.PNG" alt=""
+          /></a>
+
+          <a href="#"><img src="./assessts/push.PNG" alt="" /></a>
+          <a href="https://andypraise.github.io/restuarant/"
+            ><img src="./assessts/restuarant.PNG" alt=""
+          /></a>
+
+          <a href="https://andypraise.github.io/social-links/"
+            ><img src="./assessts/social-links.PNG" alt=""
+          /></a>
+        </div>
+        <div class="state">
+          <a href="https://andypraise.github.io/age-caculator-app/"
+            ><img src="./assessts/age.PNG" alt=""
+          /></a>
+          <a href="#"><img src="./assessts/e-commerce.PNG" alt="" /></a>
+          <a href="#"><img src="./assessts/bitcoin.PNG" alt="" /></a>
+          <a href="#"><img src="./assessts/luxury.PNG" alt="" /></a>
+        </div>
+        <div class="btc">
+          <a href="#"><button>See more</button></a>
+        </div>
+      </section>
+      <section id="services" class="serve">
+        <h2>My Services</h2>
+        <h3>Let bring your vision to life</h3>
+        <div class="design">
+          <div class="web">
+            <h3>Custom Website Development</h3>
+            <p>
+              Building responsive,accessible,and <br />
+              pixel-perfect websites using clean HTML,CSS,and Javascript.
+            </p>
+          </div>
+          <div class="web">
+            <h3>Website Re-design</h3>
+            <p>
+              Modernizing outdated layouts with <br />
+              improved styling,structure,and interactivity <br />
+              while maintaining brand consistency
+            </p>
+          </div>
+          <div class="web">
+            <h3>Responsive Design</h3>
+            <p>
+              Ensuring your website looks great and <br />
+              works flawlessly across all devices-mobile,tablet,and desktop.
+            </p>
+          </div>
+          <div class="web">
+            <h3>Cross-Broswer Compatibility</h3>
+            <p>
+              Testing and fine-tuning code to <br />
+              ensure consistent behavior across major <br />browsers like
+              chrome,Firefox,Safari,and Edge
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="text-content">
+          <h3>Let Build Something Together</h3>
+          <p>
+            Have a project in mind or just want to say hello? <br />
+            i'm alwalys open to new opportunities,collaborations,or freelance
+            work.
+          </p>
+        </div>
+        <div class="contant">
+          <a href="#">
+            <img src="./assessts/icons8-facebook-50.png" alt=""
+          /></a>
+          <a href="#"><img src="./assessts/icons8-github-50.png" alt="" /></a>
+          <a href="#"
+            ><img src="./assessts/icons8-instagram-50.png" alt=""
+          /></a>
+          <a href="#"><img src="./assessts/icons8-whatsapp-50.png" alt="" /></a>
+        </div>
+      </section>
+    </main>
+    <footer>&copy;2025 Andy Chibueze|web designer.All Right Reserved.</footer>
+    <script>
+      const links = document.querySelector("ul");
+
+      const close = document.querySelector(".stat");
+      function menu() {
+        links.classList.toggle("visible");
+        close.classList.toggle("visible");
+        document.querySelector(".menu").style.display = "none";
+        document.querySelector(".stat").style.display = "block";
+      }
+      function andy() {
+        links.classList.toggle("visible");
+        close.classList.toggle("visible");
+        document.querySelector(".menu").style.display = "block";
+        document.querySelector(".stat").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

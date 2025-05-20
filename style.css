@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(20, 20, 173);
+  color: white;
+  width: 100vw;
+  position: fixed;
+}
+nav ul {
+  display: flex;
+  gap: 3rem;
+  padding-right: 10px;
+}
+nav li {
+  list-style: none;
+}
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+nav li a:hover {
+  text-decoration: underline;
+}
+.menu {
+  display: none;
+}
+.stat {
+  display: none;
+}
+/* styling main */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 15px 0;
+  height: 550px;
+
+  background: linear-gradient(to bottom, blue, black);
+  font-size: 25px;
+}
+.hero h1 {
+  font-size: 20px;
+  color: gray;
+}
+.hello h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.hello p {
+  font-size: 20px;
+}
+.hero img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+.img {
+  margin-left: 100px;
+  padding-top: 50px;
+}
+.btn {
+  padding-top: 20px;
+}
+.btn button {
+  width: 130px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn button:hover {
+  background-color: rgb(102, 102, 240);
+  transform: scale(1.02);
+}
+/* styling about */
+.drop {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+
+  background: linear-gradient(to top, rgb(19, 18, 18), blue);
+}
+
+.imc img {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+.imc {
+  padding-top: 2rem;
+}
+.start {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  padding-top: 3rem;
+}
+.start h2,
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.start p {
+  font-size: 15px;
+}
+.cta-button {
+  padding-top: 30px;
+}
+.cta-button button {
+  width: 90px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.cta-button button:hover {
+  background-color: rgb(102, 102, 240);
+  transform: scale(1.02);
+}
+/* portfolio */
+.portfolio {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: linear-gradient(to top, rgb(90, 87, 87), blue);
+}
+.portfolio p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.state {
+  padding-top: 30px;
+}
+.state img {
+  width: 250px;
+  height: 250px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.btc {
+  padding-top: 2rem;
+}
+.btc button {
+  width: 90px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btc button:hover {
+  background-color: rgb(102, 102, 240);
+  transform: scale(1.02);
+}
+/* services */
+.serve {
+  background-color: rgb(24, 24, 54);
+  padding-bottom: 2rem;
+}
+.serve {
+  text-align: center;
+  padding-top: 20px;
+}
+.serve h2 {
+  color: white;
+}
+.serve h3 {
+  font-size: 16px;
+  color: white;
+  padding-top: 1rem;
+}
+.design {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.web {
+  width: 250px;
+  height: 200px;
+  border-radius: 5px;
+  margin-right: 10px;
+
+  background-color: rgb(207, 202, 202);
+}
+
+.web h3 {
+  font-size: 16px;
+  padding-top: 2rem;
+  color: black;
+}
+.web p {
+  font-size: 13px;
+  padding-top: 10px;
+}
+/* contact */
+.contact {
+  text-align: center;
+  padding-top: 2rem;
+  background-color: rgb(173, 173, 184);
+}
+.contant {
+  padding-top: 1rem;
+}
+.text-content {
+  padding-top: 10px;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (max-width: 800px) {
+  nav ul {
+    display: none;
+    position: absolute;
+    background-color: black;
+    top: 55px;
+    left: 1px;
+    height: 210px;
+    font-size: 20px;
+    width: 100vw;
+  }
+  .menu {
+    display: block;
+    cursor: pointer;
+  }
+  .menu img {
+    width: 40px;
+    height: 40px;
+  }
+  .stat {
+    display: none;
+    position: absolute;
+    right: 7px;
+  }
+  .got {
+    width: 40px;
+    height: 35px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .hello {
+    text-align: center;
+    padding-top: 1rem;
+  }
+  .hello h2 {
+    font-size: 25px;
+  }
+  .hello p {
+    font-size: 15px;
+  }
+  .img {
+    margin-right: 100px;
+  }
+
+  .start {
+    display: flex;
+    flex-direction: column;
+  }
+  .drop img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .imc {
+    margin-left: 1.5rem;
+  }
+  .state {
+    display: flex;
+    flex-direction: column;
+  }
+  .state img {
+    width: 65vw;
+    height: 35vh;
+    margin-top: 5px;
+  }
+  .drop {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .visible {
+    display: block;
+    padding: 15px;
+  }
+  .visible li {
+    margin-top: 0.5rem;
+    border-bottom: 2px solid white;
+  }
+  .visible li a:hover {
+    text-decoration: none;
+    color: blue;
+  }
+  .design {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .web {
+    margin-top: 10px;
+    margin-bottom: 3px;
+  }
+  .text-content p {
+    font-size: 12px;
+  }
+  .text-content h3 {
+    font-size: 15px;
+  }
+  .contant img {
+    width: 40px;
+    height: 40px;
+  }
+  footer {
+    font-size: 15px;
+  }
+}
