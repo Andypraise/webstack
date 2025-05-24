@@ -27,7 +27,7 @@
       <section id="home" class="hero">
         <div class="hello">
           <h1>Hello!</h1>
-          <h2>Hi i'm Andy Chibueze</h2>
+          <h2>Hi I'm Andy Chibueze</h2>
           <p>A passionate web designer & developer</p>
           <div class="btn">
             <a href="#services"> <button>View more details</button></a>
@@ -44,8 +44,8 @@
         <div class="start">
           <h2>About Me</h2>
           <p>
-            I speciliaze in modern web design,and responsive layout.
-            <br />Ensuring that every website i create is both visually
+            I specialize in modern web design,and responsive layout.
+            <br />ensuring that every website i create is both visually
             appealing <br />and functional. whether you are start up, small
             <br />
             business or established brand. i'm here to help you.
@@ -60,16 +60,16 @@
         <p>Engaging digital experiences</p>
         <div class="state">
           <a href="https://andypraise.github.io/ntf-card/"
-            ><img src="./assessts/nft.PNG" alt=""
+            ><img class="slide" src="./assessts/nft.PNG" alt=""
           /></a>
 
           <a href="#"><img src="./assessts/push.PNG" alt="" /></a>
           <a href="https://andypraise.github.io/restuarant/"
-            ><img src="./assessts/restuarant.PNG" alt=""
+            ><img class="slide" src="./assessts/restuarant.PNG" alt=""
           /></a>
 
           <a href="https://andypraise.github.io/social-links/"
-            ><img src="./assessts/social-links.PNG" alt=""
+            ><img class="slide" src="./assessts/social-links.PNG" alt=""
           /></a>
         </div>
         <div class="state">
@@ -124,7 +124,7 @@
             <div class="desk">
               <img src="./assessts/icons8-website-64.png" alt="" />
             </div>
-            <h3>Cross-Broswer Compatibility</h3>
+            <h3>Cross-Browser Compatibility</h3>
             <p>
               Testing and fine-tuning code <br />to ensure consistent behavior
               <br />across major<br />
@@ -139,7 +139,7 @@
           <h3>Let Build Something Together</h3>
           <p>
             Have a project in mind or just want to say hello? <br />
-            i'm alwalys open to new opportunities,collaborations,or freelance
+            i'm always open to new opportunities,collaborations,or freelance
             work.
           </p>
         </div>
@@ -155,7 +155,7 @@
         </div>
       </section>
     </main>
-    <footer>&copy;2025 Andy Chibueze|web designer.All Right Reserved.</footer>
+    <footer>&copy;2025 Andy Chibueze|web designer.All Rights Reserved.</footer>
     <script>
       const links = document.querySelector("ul");
 
@@ -172,6 +172,23 @@
         document.querySelector(".menu").style.display = "block";
         document.querySelector(".stat").style.display = "none";
       }
+
+      let slideIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+
+      function showSlides() {
+        slides.forEach((slide, index) => {
+          slide.classList.remove("active");
+        });
+        slideIndex = (slideIndex + 1) % slides.length;
+        slides[slideIndex].classList.add("active");
+      }
+
+      // Show the first slide initially
+      slides[0].classList.add("active");
+
+      // Change slide every 3 seconds
+      setInterval(showSlides, 3000);
     </script>
   </body>
 </html>
