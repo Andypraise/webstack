@@ -172,23 +172,6 @@
         document.querySelector(".menu").style.display = "block";
         document.querySelector(".stat").style.display = "none";
       }
-
-      let slideIndex = 0;
-      const slides = document.querySelectorAll(".slide");
-
-      function showSlides() {
-        slides.forEach((slide, index) => {
-          slide.classList.remove("active");
-        });
-        slideIndex = (slideIndex + 1) % slides.length;
-        slides[slideIndex].classList.add("active");
-      }
-
-      // Show the first slide initially
-      slides[0].classList.add("active");
-
-      // Change slide every 3 seconds
-      setInterval(showSlides, 3000);
     </script>
   </body>
 </html>
